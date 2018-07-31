@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$color-bg-gray-dark: #151414;
+$color-bg-gray-darker: #121212;
+
+$color-bg-gray-light: #222121;
+$color-bg-gray-lighter: #201f1f;
+$color-bg-gray-lightest: #2a2929;
+
+$theme-colors: (
+        primary: $blue,
+        secondary: $gray-600,
+        success: $green,
+        info: $cyan,
+        warning: $yellow,
+        danger: $red,
+        light: $gray-100,
+        light-dark: $color-bg-gray-light,
+        gray-lighter: $color-bg-gray-lighter,
+        gray-lightest: $color-bg-gray-lightest,
+        dark: $color-bg-gray-dark
+);
+
+.bg-gray-lighter {
+  background-color: $color-bg-gray-lighter;
+}
+
+
+.bg-gray-lightest {
+  background-color: $color-bg-gray-lightest;
+}

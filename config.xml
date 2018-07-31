@@ -1,0 +1,50 @@
+<RestClientRequest>
+  <option name="biscuits">
+    <list />
+  </option>
+  <option name="httpMethod" value="POST" />
+  <option name="urlBase" value="http://localhost:4000" />
+  <option name="urlPath" value="api/connections/tls/" />
+  <option name="headers">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="Accept" />
+        <option name="value" value="*/*" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Cache-Control" />
+        <option name="value" value="no-cache" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parameters">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="name" />
+        <option name="value" value="n" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="address" />
+        <option name="value" value="a" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="workdir" />
+        <option name="value" value="a" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="dockerTLSVerify" />
+        <option name="value" value="1" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="files" />
+        <option name="value" value="a" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parametersEnabled" value="true" />
+  <option name="haveTextToSend" value="false" />
+  <option name="haveFileToSend" value="true" />
+  <option name="isFileUpload" value="true" />
+  <option name="textToSend" value="" />
+  <option name="filesToSend" value="/home/rusakov/coverage-error.log" />
+</RestClientRequest>

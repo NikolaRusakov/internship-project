@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout"
+      >
+
+    <head>
+        <title>reg</title>
+        <script th:inline="javascript">
+            window.APP_TITLE = [[${APP_TITLE}]];
+            var _appLocale = "cs-CZ"
+            var messages = {
+                "": "",
+            }
+            var buildVersion = [[${buildVersion}]];
+            var buildNumber = [[${buildNumber}]];
+        </script>
+
+        <script th:inline="javascript">
+        /*<![CDATA[*/
+            var serverContextPath = [[${contextPath}]];
+        /*]]>*/
+        </script>
+    </head>
+
+    <body>
+        <section layout:fragment="page-content" th:remove="tag">
+            <div id="root">
+            </div>
+        </section>
+        <section layout:fragment="page-js" th:remove="tag">
+            <script th:if="${isDevBuild}" src="http://localhost:3000/webpack-dev-server.js"></script>
+            <script th:if="${isDevBuild}" type="text/javascript" src="http://localhost:3000/dist/bundle.js"></script>
+
+            <script th:if="${!isDevBuild}" type="text/javascript" src="" th:src="@{/res/bundle.js(v=${appVersion})}"></script>
+        </section>
+    </body>
+</html>

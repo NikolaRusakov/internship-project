@@ -1,0 +1,19 @@
+#machine e1
+version: '2'
+
+services:
+
+  dash:
+    image: docker-dash_test
+    container_name: dash
+    environment:
+      - VIRTUAL_HOST=localhost:8800/
+      - HTTPS_METHOD=noredirect
+    volumes:
+
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+       - "8080:8800"
+networks:
+  default:
+    driver: bridge

@@ -1,0 +1,52 @@
+//@import "./colors";
+@import "~bootstrap/scss/bootstrap.scss";
+
+.connection {
+  display: flex;
+  .legend {
+    position: absolute;
+    left: 300px;
+
+    width: 100%;
+  }
+  .card {
+    display: none;
+    h4 {
+      text-align: center;
+      font-size: 24px;
+      text-decoration: underline;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  &:hover {
+    .card {
+      display: block;
+    }
+  }
+}
+
+.nav-item a {
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 5px 10px;
+  color: #d6d6d6;
+  text-decoration: none;
+
+  &:hover {
+    background: #201f1f;
+    color: #fff;
+  }
+}
+
+
+.details-table {
+  td {
+    width: 100%;
+  }
+
+}
