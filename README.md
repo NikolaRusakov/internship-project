@@ -1,4 +1,5 @@
-This project belongs to `https://github.com/petrleocompel/docker-dash` as a part of internship.
+Core functions of this project belong to `https://github.com/petrleocompel/docker-dash` as a part of internship.
+This version is developed in free time for personal usage.
 
 # docker-dash
 
