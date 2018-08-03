@@ -1,5 +1,5 @@
 Core functions of this project belong to `https://github.com/petrleocompel/docker-dash` as a part of internship.
-This version is developed in free time for personal usage.
+This version is developed in my free time for personal usage.
 I participated in back-end part of the project. 
 After internship, I refactored front-end and made new features. Such as toggling Docker daemon based on different configuration and its environments (docker composes and containers). 
 For the final usage is needed make some tweaks and changes to get the project working properly with no side effects.
